@@ -263,7 +263,7 @@ const defaultProjects = [
     summary:
       "I engineered a Cinematic Culinary Interface that brings the Art de Vivre of Paris to the digital screen. This project focuses on high-conversion visual storytelling for the luxury hospitality sector.",
     tags: ["Website Development", "Design", "UX/UI", "Cinematic Storytelling", "React", "Tailwind CSS"],
-    image: "assets/dental.png",
+    image: "assets/Dental.png",
     liveUrl: "",
     githubUrl: "",
     previewImage: "assets/dental2.png"
