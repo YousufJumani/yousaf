@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yousuf Nasurullah — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Yousuf Nasurullah, a software engineer building AI-first, full-stack, and automation-focused products from Karachi, Pakistan."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yousuf Nasurullah — Software Engineer" />
+    <meta
+      property="og:description"
+      content="AI-first products, full-stack engineering, automation workflows, and practical software systems."
+    />
+    <meta property="og:image" content="assets/og-card.svg" />
+    <meta property="og:site_name" content="Yousuf Nasurullah Portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yousuf Nasurullah — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of a software engineer building fast, useful products across AI, web, and automation."
+    />
+    <meta name="twitter:image" content="assets/og-card.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="top-dock" aria-label="Primary navigation">
+        <a class="dock-btn" href="#home" data-label="Home" aria-label="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg>
+        </a>
+        <a class="dock-btn" href="#projects" data-label="Projects" aria-label="Projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8.5A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"/></svg>
+        </a>
+        <a class="dock-btn" href="#experience" data-label="Experience" aria-label="Experience">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.24-8 5v1h16v-1c0-2.76-3.6-5-8-5Z"/></svg>
+        </a>
+        <a class="dock-btn" href="#skills" data-label="Skills" aria-label="Skills">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v4H4zM4 10h7v9H4zM13 10h7v9h-7z"/></svg>
+        </a>
+        <a class="dock-btn" href="#contact" data-label="Contact" aria-label="Contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="dock-btn" id="theme-toggle" data-label="Theme" aria-label="Toggle theme" type="button">
+          <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A7.7 7.7 0 0 1 9.8 4 8.6 8.6 0 1 0 20 14.2Z" /></svg>
+          <span id="theme-label" class="sr-only">Dark mode</span>
+        </button>
+        <!-- admin access via secret key sequence: type "admin" while not in a text field -->
+      </nav>
+
+      <main class="portfolio-layout" id="home">
+        <aside class="sidebar-column section-reveal delay-0">
+          <article class="profile-card card sticky-panel">
+            <span class="card-accent accent-top"></span>
+            <span class="card-accent accent-left"></span>
+            <div class="profile-photo-wrap">
+              <img id="profile-image" src="assets/avatar.svg" alt="Portrait placeholder for Yousuf Nasurullah" class="profile-photo" />
+            </div>
+            <div class="profile-body">
+              <h1>Yousuf Nasurullah</h1>
+              <div class="profile-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2 9.5 9H2l6 4.4L5.7 22 12 17.2 18.3 22 16 13.4 22 9h-7.5z"/></svg>
+              </div>
+              <p id="profile-summary">
+                Software engineer building AI-first, full-stack, and automation-driven products with real-world utility.
+              </p>
+            </div>
+
+            <div class="profile-actions">
+              <a class="primary-btn" href="Yousaf_Nasurullah_CV.pdf" download>Download CV</a>
+              <a class="secondary-btn" href="#contact">Hire Me</a>
+            </div>
+
+            <div class="socials" aria-label="Social links">
+              <a id="social-github" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.3 1.1 2.9.9.1-.7.4-1.1.6-1.4-2.2-.3-4.5-1.1-4.5-5.1 0-1.1.4-2 1-2.7-.1-.2-.4-1.3.1-2.8 0 0 .8-.3 2.8 1.1a9.3 9.3 0 0 1 5 0c1.9-1.4 2.8-1.1 2.8-1.1.6 1.5.2 2.6.1 2.8.6.7 1 1.6 1 2.7 0 4-2.3 4.8-4.5 5.1.4.3.7 1 .7 2v3c0 .3.2.6.7.5 4-1.3 6.9-5 6.9-9.4C22 6.6 17.5 2 12 2Z"/></svg>
+              </a>
+              <a id="social-linkedin" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M6.5 9h3v10h-3zM8 4.5A1.8 1.8 0 1 0 8 8a1.8 1.8 0 0 0 0-3.5ZM12 9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.6 2 3.6 4.7V19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V19H12z"/></svg>
+              </a>
+              <a id="social-facebook" href="#" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.4-3.3h-3.2V8.4c0-1 .3-1.7 1.8-1.7h1.5V3.8c-.7-.1-1.4-.2-2.1-.2-3.1 0-5.1 1.9-5.1 5.4v1.5H7v3.3h2.6V22z"/></svg>
+              </a>
+              <a id="social-instagram" href="#" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2Zm10.4 1.5a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Z"/></svg>
+              </a>
+            </div>
+          </article>
+        </aside>
+
+        <div class="content-column">
+          <section class="hero-copy section-reveal delay-1">
+            <div>
+              <p class="eyebrow">SOFTWARE</p>
+              <h2>ENGINEER</h2>
+              <p class="intro intro-wide">
+                I build fast, polished digital products across AI, web, and automation — with a focus on clarity, performance, real usability, and systems thinking.
+              </p>
+            </div>
+
+            <div class="stats-row stats-row-wide">
+              <div class="stat-card lift-card">
+                <strong>20+</strong>
+                <span>Projects</span>
+              </div>
+              <div class="stat-card lift-card">
+                <strong>100+</strong>
+                <span>Beta users</span>
+              </div>
+              <div class="stat-card lift-card">
+                <strong>10+</strong>
+                <span>Clients</span>
+              </div>
+            </div>
+
+            <div class="feature-grid feature-grid-wide">
+              <article class="feature-card feature-orange lift-card">
+                <div class="feature-icon stack-icon">
+                  <span></span><span></span><span></span>
+                </div>
+                <h3>AI products, real-time voice flows, practical product thinking</h3>
+                <a class="feature-arrow" href="#projects" aria-label="Jump to projects">
+                  <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+              </article>
+              <article class="feature-card feature-lime lift-card">
+                <div class="feature-icon window-icon">
+                  <span></span><span></span>
+                </div>
+                <h3>React, Next, Node, Python, APIs, cloud-ready engineering</h3>
+                <a class="feature-arrow" href="#skills" aria-label="Jump to skills">
+                  <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-block section-reveal delay-2" id="projects">
+            <header class="section-heading">
+              <span>RECENT</span>
+              <h2>PROJECTS</h2>
+            </header>
+            <div class="projects-list" id="projects-list"></div>
+            <button class="see-all-btn" id="see-all-projects" type="button" hidden>
+              <span id="see-all-label">See all projects</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </button>
+          </section>
+
+          <section class="section-block section-reveal delay-3" id="experience">
+            <header class="section-heading">
+              <span>WORK &amp;</span>
+              <h2>EXPERIENCE</h2>
+            </header>
+            <div class="experience-list refined-grid">
+              <article class="experience-card lift-card">
+                <div class="icon-chip">
+                  <svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V6z"/></svg>
+                </div>
+                <div>
+                  <div class="project-head"><h3>IBA Mental Health Hackathon</h3><span>Finalist · 2025</span></div>
+                  <p>Pitched a sentiment-aware AI triage system to industry leaders from SadaPay and Motive, focusing on signal clarity, human-centered UX, and decision support.</p>
+                </div>
+              </article>
+              <article class="experience-card lift-card">
+                <div class="icon-chip alt-chip">
+                  <svg viewBox="0 0 24 24"><path d="M5 4h14v4H5zM4 10h16v10H4zM8 2v4M16 2v4"/></svg>
+                </div>
+                <div>
+                  <div class="project-head"><h3>GDSC NEDUET</h3><span>Technical Lead · 2025</span></div>
+                  <p>Facilitated peer workshops on n8n automation and Python-based workflow optimization, helping students ship more structured and reliable engineering workflows.</p>
+                </div>
+              </article>
+              <article class="experience-card lift-card">
+                <div class="icon-chip accent-chip">
+                  <svg viewBox="0 0 24 24"><path d="M4 19h16M7 16V8M12 16V5M17 16v-3"/></svg>
+                </div>
+                <div>
+                  <div class="project-head"><h3>Engineering Focus</h3><span>Ongoing</span></div>
+                  <p>Strong interest in software engineering fundamentals, system design, full-stack product delivery, automation, and AI-enhanced interfaces that remain useful under real constraints.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-block section-reveal delay-4" id="skills">
+            <header class="section-heading">
+              <span>STACK &amp;</span>
+              <h2>SKILLS</h2>
+            </header>
+            <div class="skills-grid">
+              <article class="capability-card lift-card">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24"><path d="M6 19h12M7 16l5-12 5 12M9.2 11h5.6"/></svg>
+                </div>
+                <div>
+                  <h3>Core Engineering</h3>
+                  <p>DSA, OOP, DBMS, Computer Networks, OS, and System Design.</p>
+                </div>
+              </article>
+              <article class="capability-card lift-card">
+                <div class="skill-icon lime-icon">
+                  <svg viewBox="0 0 24 24"><path d="M8 5h8v4H8zM5 11h14v8H5zM9 15h6"/></svg>
+                </div>
+                <div>
+                  <h3>Languages</h3>
+                  <p>Python, JavaScript (ES6+), and C/C++ for application and systems-level problem solving.</p>
+                </div>
+              </article>
+              <article class="capability-card lift-card">
+                <div class="skill-icon orange-icon">
+                  <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </div>
+                <div>
+                  <h3>Frameworks</h3>
+                  <p>React.js, Next.js, Node.js, and Tailwind CSS for fast product delivery.</p>
+                </div>
+              </article>
+              <article class="capability-card lift-card">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7zM8 9l4 2 4-2M12 11v6"/></svg>
+                </div>
+                <div>
+                  <h3>Tools &amp; Cloud</h3>
+                  <p>Git, Docker, REST APIs, AWS, BeautifulSoup, and Selenium.</p>
+                </div>
+              </article>
+              <article class="capability-card lift-card">
+                <div class="skill-icon lime-icon">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></svg>
+                </div>
+                <div>
+                  <h3>Education</h3>
+                  <p>Bachelor in Computer Sciences &amp; Information Technology, NED University of Engineering and Technology, expected 2027.</p>
+                </div>
+              </article>
+              <article class="capability-card lift-card">
+                <div class="skill-icon orange-icon">
+                  <svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4Zm2 4.5 6 3 6-3M8 16l4 2 4-2"/></svg>
+                </div>
+                <div>
+                  <h3>Certifications</h3>
+                  <p>Full Stack Developer (FreeCodeCamp) and Cloud &amp; DevOPS (Coursera).</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-block contact-block section-reveal delay-4" id="contact">
+            <header class="section-heading contact-heading">
+              <span>LET'S WORK</span>
+              <h2>TOGETHER</h2>
+            </header>
+            <div class="contact-layout">
+              <div class="contact-panel lift-card">
+                <p>
+                  Open to internships, freelance work, software engineering roles, and product collaborations.
+                </p>
+                <div class="contact-links">
+                  <a class="contact-link-row" href="mailto:yousufjumani2@gmail.com">
+                    <span class="contact-link-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none"/></svg>
+                    </span>
+                    <span>yousufjumani2@gmail.com</span>
+                  </a>
+                  <a class="contact-link-row" href="tel:+923108606468">
+                    <span class="contact-link-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span>+92 310 8606468</span>
+                  </a>
+                  <div class="contact-link-row contact-link-static">
+                    <span class="contact-link-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                    </span>
+                    <span>Karachi, Pakistan</span>
+                  </div>
+                </div>
+                <a id="contact-linkedin" class="linkedin-cta" href="#" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9h3v10h-3zm1.5-5.5A1.8 1.8 0 1 0 8 7a1.8 1.8 0 0 0 0-3.5zm4.5 5.5h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.6 2 3.6 4.7V19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V19H12z" fill="currentColor"/></svg>
+                  <span>Let's connect on LinkedIn</span>
+                  <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+                <a class="primary-btn inline-btn" href="Yousaf_Nasurullah_CV.pdf" download>Download CV</a>
+              </div>
+
+              <form class="contact-form lift-card" id="contact-form">
+                <div class="form-row two-col">
+                  <label>
+                    <span>Name</span>
+                    <input id="contact-name" type="text" placeholder="Your name" required />
+                  </label>
+                  <label>
+                    <span>Email</span>
+                    <input id="contact-email" type="email" placeholder="your@email.com" required />
+                  </label>
+                </div>
+                <div class="form-row">
+                  <label>
+                    <span>Company</span>
+                    <input id="contact-company" type="text" placeholder="Company / Team" />
+                  </label>
+                </div>
+                <div class="form-row">
+                  <label>
+                    <span>Message</span>
+                    <textarea id="contact-message" placeholder="Tell me about the role, product, or problem you want to solve." required></textarea>
+                  </label>
+                </div>
+                <button class="primary-btn submit-btn" type="submit">Send Inquiry</button>
+                <p class="form-status" id="contact-status"></p>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="page-footer">
+        <p>Yousaf Nasurullah - Software Engineer  - Copyright © 2026</p>
+      </footer>
+    </div>
+
+    <div class="library-overlay" id="library-overlay" hidden>
+      <div class="library-panel">
+        <div class="library-header">
+          <div>
+            <p class="library-eyebrow">ALL WORK</p>
+            <h2 class="library-title">Project Library</h2>
+          </div>
+          <button class="library-close" id="library-close" type="button" aria-label="Close project library">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="library-grid" id="library-grid"></div>
+      </div>
+    </div>
+
+    <div class="image-preview-overlay" id="image-preview-overlay" hidden>
+      <div class="image-preview-panel">
+        <button class="image-preview-close" id="image-preview-close" type="button" aria-label="Close image preview">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="image-preview-viewport">
+          <img id="image-preview-image" class="image-preview-image" src="" alt="Project preview" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050505"/>
+  <circle cx="170" cy="110" r="140" fill="#D7642B" fill-opacity="0.18"/>
+  <circle cx="1030" cy="520" r="180" fill="#B8D92F" fill-opacity="0.12"/>
+  <rect x="88" y="96" width="262" height="368" rx="28" fill="#E7E7E7"/>
+  <rect x="136" y="150" width="166" height="228" rx="20" fill="#C8541C"/>
+  <path d="M164 367C181 279 221 206 266 208C304 210 339 283 354 367H164Z" fill="#0A0A0A"/>
+  <circle cx="244" cy="230" r="63" fill="#121212"/>
+  <path d="M189 113C207 157 254 174 309 153" stroke="#D7642B" stroke-width="5" stroke-dasharray="11 11"/>
+  <text x="130" y="525" fill="#050505" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">Yousuf Nasurullah</text>
+  <text x="430" y="220" fill="#F3F3F3" font-family="Inter, Arial, sans-serif" font-size="96" font-weight="900">SOFTWARE</text>
+  <text x="430" y="314" fill="#242329" font-family="Inter, Arial, sans-serif" font-size="96" font-weight="900">ENGINEER</text>
+  <text x="430" y="398" fill="#8C8891" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">AI-first products · Full-stack engineering · Automation</text>
+  <text x="430" y="466" fill="#D7642B" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Karachi, Pakistan · yousufjumani2@gmail.com</text>
+</svg>
