@@ -63,7 +63,7 @@ const defaultProjects = [
     ],
     tags: ["React", "TypeScript", "Express", "SQLite", "Recharts"],
     image: "assets/storeiq.png",
-    liveUrl: "https://store-iq-dashboard.vercel.app/overview",
+    liveUrl: "https://store-iq-dashboard.vercel.app/",
     githubUrl: ""
   },
   {
