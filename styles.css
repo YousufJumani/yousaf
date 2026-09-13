@@ -716,6 +716,8 @@ svg {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .project-subtitle {
@@ -789,6 +791,12 @@ svg {
   grid-template-columns: auto 1fr;
   gap: 16px;
   padding: 18px;
+}
+
+.experience-card > div,
+.capability-card > div {
+  display: grid;
+  gap: 8px;
 }
 
 .icon-chip,
