@@ -1,390 +1,1017 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yousuf Nasurullah — Software Engineer</title>
-    <meta
-      name="description"
-      content="Portfolio of Yousuf Nasurullah, a software engineer building AI-first, full-stack, and automation-focused products from Karachi, Pakistan."
-    />
-    <meta name="theme-color" content="#050505" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Yousuf Nasurullah — Software Engineer" />
-    <meta
-      property="og:description"
-      content="AI-first products, full-stack engineering, automation workflows, and practical software systems."
-    />
-    <meta property="og:image" content="assets/og-card.svg" />
-    <meta property="og:site_name" content="Yousuf Nasurullah Portfolio" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Yousuf Nasurullah — Software Engineer" />
-    <meta
-      name="twitter:description"
-      content="Portfolio of a software engineer building fast, useful products across AI, web, and automation."
-    />
-    <meta name="twitter:image" content="assets/og-card.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <nav class="top-dock" aria-label="Primary navigation">
-        <a class="dock-btn" href="#home" data-label="Home" aria-label="Home">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg>
-        </a>
-        <a class="dock-btn" href="#projects" data-label="Projects" aria-label="Projects">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8.5A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"/></svg>
-        </a>
-        <a class="dock-btn" href="#experience" data-label="Experience" aria-label="Experience">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.24-8 5v1h16v-1c0-2.76-3.6-5-8-5Z"/></svg>
-        </a>
-        <a class="dock-btn" href="#skills" data-label="Skills" aria-label="Skills">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v4H4zM4 10h7v9H4zM13 10h7v9h-7z"/></svg>
-        </a>
-        <a class="dock-btn" href="#contact" data-label="Contact" aria-label="Contact">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <button class="dock-btn" id="theme-toggle" data-label="Theme" aria-label="Toggle theme" type="button">
-          <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A7.7 7.7 0 0 1 9.8 4 8.6 8.6 0 1 0 20 14.2Z" /></svg>
-          <span id="theme-label" class="sr-only">Dark mode</span>
-        </button>
-        <!-- admin access via secret key sequence: type "admin" while not in a text field -->
-      </nav>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yousuf Nasurullah · Software Engineer</title>
 
-      <main class="portfolio-layout" id="home">
-        <aside class="sidebar-column section-reveal delay-0">
-          <article class="profile-card card sticky-panel">
-            <span class="card-accent accent-top"></span>
-            <span class="card-accent accent-left"></span>
-            <div class="profile-photo-wrap">
-              <img id="profile-image" src="assets/avatar.svg" alt="Portrait placeholder for Yousuf Nasurullah" class="profile-photo" />
-            </div>
-            <div class="profile-body">
-              <h1>Yousuf Nasurullah</h1>
-              <div class="profile-badge" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2 9.5 9H2l6 4.4L5.7 22 12 17.2 18.3 22 16 13.4 22 9h-7.5z"/></svg>
-              </div>
-              <p id="profile-summary">
-                Software engineer building AI-first, full-stack, and automation-driven products with real-world utility.
-              </p>
-            </div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-            <div class="profile-actions">
-              <a class="primary-btn" href="Yousaf_Nasurullah_CV.pdf" download>Download CV</a>
-              <a class="secondary-btn" href="#contact">Hire Me</a>
-            </div>
+<style>
+:root {
+  --paper: #f2ede0;
+  --paper-dark: #e8e2cf;
+  --ink: #1a1815;
+  --ink-soft: #3d3833;
+  --blue: #1f4a8f;
+  --red: #b8351d;
+  --yellow: #e8c547;
+  --green: #2f5d3a;
+  --gray: #6b6459;
+  --rule: #cfc5ae;
+}
 
-            <div class="socials" aria-label="Social links">
-              <a id="social-github" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.3 1.1 2.9.9.1-.7.4-1.1.6-1.4-2.2-.3-4.5-1.1-4.5-5.1 0-1.1.4-2 1-2.7-.1-.2-.4-1.3.1-2.8 0 0 .8-.3 2.8 1.1a9.3 9.3 0 0 1 5 0c1.9-1.4 2.8-1.1 2.8-1.1.6 1.5.2 2.6.1 2.8.6.7 1 1.6 1 2.7 0 4-2.3 4.8-4.5 5.1.4.3.7 1 .7 2v3c0 .3.2.6.7.5 4-1.3 6.9-5 6.9-9.4C22 6.6 17.5 2 12 2Z"/></svg>
-              </a>
-              <a id="social-linkedin" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24"><path d="M6.5 9h3v10h-3zM8 4.5A1.8 1.8 0 1 0 8 8a1.8 1.8 0 0 0 0-3.5ZM12 9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.6 2 3.6 4.7V19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V19H12z"/></svg>
-              </a>
-              <a id="social-facebook" href="#" target="_blank" rel="noreferrer" aria-label="Facebook">
-                <svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.4-3.3h-3.2V8.4c0-1 .3-1.7 1.8-1.7h1.5V3.8c-.7-.1-1.4-.2-2.1-.2-3.1 0-5.1 1.9-5.1 5.4v1.5H7v3.3h2.6V22z"/></svg>
-              </a>
-              <a id="social-instagram" href="#" target="_blank" rel="noreferrer" aria-label="Instagram">
-                <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2Zm10.4 1.5a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Z"/></svg>
-              </a>
-            </div>
-          </article>
-        </aside>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-        <div class="content-column">
-          <section class="hero-copy section-reveal delay-1">
-            <div>
-              <p class="eyebrow">SOFTWARE</p>
-              <h2>ENGINEER</h2>
-              <p class="intro intro-wide">
-                I build fast, polished digital products across AI, web, and automation — with a focus on clarity, performance, real usability, and systems thinking.
-              </p>
-            </div>
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
 
-            <div class="stats-row stats-row-wide">
-              <div class="stat-card lift-card">
-                <strong>20+</strong>
-                <span>Projects</span>
-              </div>
-              <div class="stat-card lift-card">
-                <strong>100+</strong>
-                <span>Beta users</span>
-              </div>
-              <div class="stat-card lift-card">
-                <strong>10+</strong>
-                <span>Clients</span>
-              </div>
-            </div>
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
 
-            <div class="feature-grid feature-grid-wide">
-              <article class="feature-card feature-orange lift-card">
-                <div class="feature-icon stack-icon">
-                  <span></span><span></span><span></span>
-                </div>
-                <h3>AI products, real-time voice flows, practical product thinking</h3>
-                <a class="feature-arrow" href="#projects" aria-label="Jump to projects">
-                  <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-                </a>
-              </article>
-              <article class="feature-card feature-lime lift-card">
-                <div class="feature-icon window-icon">
-                  <span></span><span></span>
-                </div>
-                <h3>React, Next, Node, Python, APIs, cloud-ready engineering</h3>
-                <a class="feature-arrow" href="#skills" aria-label="Jump to skills">
-                  <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-                </a>
-              </article>
-            </div>
-          </section>
+/* Subtle paper grain overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  background-image:
+    radial-gradient(ellipse at 15% 10%, rgba(140,110,60,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 90%, rgba(140,110,60,0.05) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
 
-          <section class="section-block section-reveal delay-2" id="projects">
-            <header class="section-heading">
-              <span>RECENT</span>
-              <h2>PROJECTS</h2>
-            </header>
-            <div class="projects-list" id="projects-list"></div>
-            <button class="see-all-btn" id="see-all-projects" type="button" hidden>
-              <span id="see-all-label">See all projects</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-            </button>
-          </section>
+h1, h2, h3, h4 { font-family: 'Fraunces', serif; font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
+h1 { font-size: clamp(3rem, 10vw, 8rem); }
+h2 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+h3 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); }
+a { color: inherit; text-decoration: none; }
 
-          <section class="section-block section-reveal delay-3" id="experience">
-            <header class="section-heading">
-              <span>WORK &amp;</span>
-              <h2>EXPERIENCE</h2>
-            </header>
-            <div class="experience-list refined-grid">
-              <article class="experience-card lift-card">
-                <div class="icon-chip">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                </div>
-                <div>
-                  <div class="project-head"><h3>App Development Intern</h3><span>Jul – Aug 2026</span></div>
-                  <p class="project-subtitle">Zenvyro Labs (Pvt) Ltd. (Remote)</p>
-                  <p>Built UI screens for an in-development mobile app and wired them to backend REST endpoints under senior code review; shipped through a Git feature-branch / PR workflow.</p>
-                </div>
-              </article>
-              <article class="experience-card lift-card">
-                <div class="icon-chip alt-chip">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                </div>
-                <div>
-                  <div class="project-head"><h3>Full-Stack Web Development Intern</h3><span>Jul 2026</span></div>
-                  <p class="project-subtitle">NeuroFive Solutions</p>
-                  <p>Completed a MERN-stack cohort covering REST API design, JWT authentication, and protected routes; delivered a full-stack CRUD capstone with role-based access.</p>
-                </div>
-              </article>
-              <article class="experience-card lift-card">
-                <div class="icon-chip accent-chip">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
-                </div>
-                <div>
-                  <div class="project-head"><h3>IT Intern (Part-Time)</h3><span>Feb – Apr 2026</span></div>
-                  <p class="project-subtitle">Karachi Development Authority</p>
-                  <p>Wrote SQL queries against internal operational databases and built small automation scripts for data-cleanup and ticket triage in a government IT environment.</p>
-                </div>
-              </article>
-              <article class="experience-card lift-card">
-                <div class="icon-chip">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V6z"/></svg>
-                </div>
-                <div>
-                  <div class="project-head"><h3>IBA Mental Health Hackathon</h3><span>Finalist · 2025</span></div>
-                  <p>Pitched a sentiment-aware AI triage system to industry leaders from SadaPay and Motive, focusing on signal clarity, human-centered UX, and decision support.</p>
-                </div>
-              </article>
-              <article class="experience-card lift-card">
-                <div class="icon-chip alt-chip">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v4H5zM4 10h16v10H4zM8 2v4M16 2v4"/></svg>
-                </div>
-                <div>
-                  <div class="project-head"><h3>GDSC NEDUET</h3><span>Technical Lead · 2025</span></div>
-                  <p>Facilitated peer workshops on n8n automation and Python-based workflow optimization, helping students ship more structured and reliable engineering workflows.</p>
-                </div>
-              </article>
-              <article class="experience-card lift-card">
-                <div class="icon-chip accent-chip">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M7 16V8M12 16V5M17 16v-3"/></svg>
-                </div>
-                <div>
-                  <div class="project-head"><h3>Engineering Focus</h3><span>Ongoing</span></div>
-                  <p>Strong interest in software engineering fundamentals, system design, full-stack product delivery, automation, and AI-enhanced interfaces that remain useful under real constraints.</p>
-                </div>
-              </article>
-            </div>
-          </section>
+.hand { font-family: 'Caveat', cursive; font-weight: 500; color: var(--blue); }
+.mono { font-family: 'IBM Plex Mono', monospace; }
 
-          <section class="section-block section-reveal delay-4" id="skills">
-            <header class="section-heading">
-              <span>STACK &amp;</span>
-              <h2>SKILLS</h2>
-            </header>
-            <div class="skills-grid">
-              <article class="capability-card lift-card">
-                <div class="skill-icon">
-                  <svg viewBox="0 0 24 24"><path d="M6 19h12M7 16l5-12 5 12M9.2 11h5.6"/></svg>
-                </div>
-                <div>
-                  <h3>Core Engineering</h3>
-                  <p>DSA, OOP, DBMS, Computer Networks, OS, and System Design.</p>
-                </div>
-              </article>
-              <article class="capability-card lift-card">
-                <div class="skill-icon lime-icon">
-                  <svg viewBox="0 0 24 24"><path d="M8 5h8v4H8zM5 11h14v8H5zM9 15h6"/></svg>
-                </div>
-                <div>
-                  <h3>Languages</h3>
-                  <p>Python, JavaScript (ES6+), and C/C++ for application and systems-level problem solving.</p>
-                </div>
-              </article>
-              <article class="capability-card lift-card">
-                <div class="skill-icon orange-icon">
-                  <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-                </div>
-                <div>
-                  <h3>Frameworks</h3>
-                  <p>React.js, Next.js, Node.js, and Tailwind CSS for fast product delivery.</p>
-                </div>
-              </article>
-              <article class="capability-card lift-card">
-                <div class="skill-icon">
-                  <svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7zM8 9l4 2 4-2M12 11v6"/></svg>
-                </div>
-                <div>
-                  <h3>Tools &amp; Cloud</h3>
-                  <p>Git, Docker, REST APIs, AWS, BeautifulSoup, and Selenium.</p>
-                </div>
-              </article>
-              <article class="capability-card lift-card">
-                <div class="skill-icon lime-icon">
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></svg>
-                </div>
-                <div>
-                  <h3>Education</h3>
-                  <p>Bachelor in Computer Sciences &amp; Information Technology, NED University of Engineering and Technology, expected 2027.</p>
-                </div>
-              </article>
-              <article class="capability-card lift-card">
-                <div class="skill-icon orange-icon">
-                  <svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4Zm2 4.5 6 3 6-3M8 16l4 2 4-2"/></svg>
-                </div>
-                <div>
-                  <h3>Certifications</h3>
-                  <p>Full Stack Developer (FreeCodeCamp) and Cloud &amp; DevOPS (Coursera).</p>
-                </div>
-              </article>
-            </div>
-          </section>
+.container { width: min(100% - 3rem, 1200px); margin-inline: auto; position: relative; }
+section { padding: 6rem 0; position: relative; }
 
-          <section class="section-block contact-block section-reveal delay-4" id="contact">
-            <header class="section-heading contact-heading">
-              <span>LET'S WORK</span>
-              <h2>TOGETHER</h2>
-            </header>
-            <div class="contact-layout">
-              <div class="contact-panel lift-card">
-                <p>
-                  Open to internships, freelance work, software engineering roles, and product collaborations.
-                </p>
-                <div class="contact-links">
-                  <a class="contact-link-row" href="mailto:yousufjumani2@gmail.com">
-                    <span class="contact-link-icon">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none"/></svg>
-                    </span>
-                    <span>yousufjumani2@gmail.com</span>
-                  </a>
-                  <a class="contact-link-row" href="tel:+923108606468">
-                    <span class="contact-link-icon">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </span>
-                    <span>+92 310 8606468</span>
-                  </a>
-                  <div class="contact-link-row contact-link-static">
-                    <span class="contact-link-icon">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
-                    </span>
-                    <span>Karachi, Pakistan</span>
-                  </div>
-                </div>
-                <a id="contact-linkedin" class="linkedin-cta" href="#" target="_blank" rel="noreferrer">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9h3v10h-3zm1.5-5.5A1.8 1.8 0 1 0 8 7a1.8 1.8 0 0 0 0-3.5zm4.5 5.5h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.6 2 3.6 4.7V19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V19H12z" fill="currentColor"/></svg>
-                  <span>Let's connect on LinkedIn</span>
-                  <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-                </a>
-                <a class="primary-btn inline-btn" href="Yousaf_Nasurullah_CV.pdf" download>Download CV</a>
-              </div>
+/* Nav */
+nav.top-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--paper);
+  border-bottom: 1.5px solid var(--ink);
+  padding: 0.75rem 0;
+}
+nav.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
 
-              <form class="contact-form lift-card" id="contact-form">
-                <div class="form-row two-col">
-                  <label>
-                    <span>Name</span>
-                    <input id="contact-name" type="text" placeholder="Your name" required />
-                  </label>
-                  <label>
-                    <span>Email</span>
-                    <input id="contact-email" type="email" placeholder="your@email.com" required />
-                  </label>
-                </div>
-                <div class="form-row">
-                  <label>
-                    <span>Company</span>
-                    <input id="contact-company" type="text" placeholder="Company / Team" />
-                  </label>
-                </div>
-                <div class="form-row">
-                  <label>
-                    <span>Message</span>
-                    <textarea id="contact-message" placeholder="Tell me about the role, product, or problem you want to solve." required></textarea>
-                  </label>
-                </div>
-                <button class="primary-btn submit-btn" type="submit">Send Inquiry</button>
-                <p class="form-status" id="contact-status"></p>
-              </form>
-            </div>
-          </section>
-        </div>
-      </main>
+.logo-mark {
+  font-family: 'Fraunces', serif; font-weight: 800; font-size: 1.25rem;
+  letter-spacing: -0.02em; display: flex; align-items: baseline; gap: 0.5rem;
+}
+.logo-mark small {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; font-weight: 500;
+  color: var(--gray); text-transform: uppercase; letter-spacing: 0.1em;
+}
 
-      <footer class="page-footer">
-        <p>Yousaf Nasurullah - Software Engineer  - Copyright © 2026</p>
-      </footer>
+.nav-links { display: flex; gap: 2rem; list-style: none; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.nav-links a { position: relative; padding: 0.25rem 0; transition: color 0.2s; }
+.nav-links a:hover { color: var(--blue); }
+
+/* Masthead */
+.masthead { border-bottom: 2px solid var(--ink); padding: 1.5rem 0 0.75rem; margin-bottom: 4rem; }
+.masthead-meta {
+  display: flex; justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray);
+  margin-bottom: 0.75rem; flex-wrap: wrap; gap: 1rem;
+}
+.masthead-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.75rem, 8.5vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-variation-settings: "opsz" 144;
+}
+.masthead-title .italic { font-style: italic; font-weight: 400; color: var(--blue); text-transform: none; }
+.masthead-bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 0.75rem; border-top: 1px solid var(--rule);
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray);
+  flex-wrap: wrap; gap: 1rem;
+}
+.masthead-bottom .stamp {
+  color: var(--red); border: 1.5px solid var(--red);
+  padding: 0.2rem 0.6rem; font-weight: 600; transform: rotate(-2deg); opacity: 0.85;
+}
+
+/* Hero */
+.hero { padding: 2rem 0 6rem; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4rem; align-items: start; }
+
+.hero-left .eyebrow {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;
+}
+.hero-left .eyebrow::before { content: ''; width: 32px; height: 1.5px; background: var(--red); }
+
+.hero-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(3.5rem, 8.5vw, 7rem);
+  font-weight: 800; line-height: 0.9;
+  letter-spacing: -0.045em; margin-bottom: 1.5rem;
+  position: relative;
+}
+.hero-title .line-1 { display: block; font-style: italic; font-weight: 400; }
+.hero-title .line-2 { display: block; font-weight: 900; text-transform: uppercase; letter-spacing: -0.05em; }
+
+.hero-subtitle {
+  font-family: 'Fraunces', serif; font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-style: italic; font-weight: 400; color: var(--ink-soft);
+  margin-bottom: 1.5rem; max-width: 540px;
+}
+.hero-subtitle .hand {
+  font-size: 1.4rem; display: inline-block;
+  transform: rotate(-1deg); margin-left: 0.3rem;
+}
+
+.hero-body {
+  font-size: 1.02rem; color: var(--ink-soft);
+  max-width: 560px; margin-bottom: 2rem; line-height: 1.7;
+}
+.hero-body::first-letter {
+  font-family: 'Fraunces', serif; font-size: 3.2rem; float: left;
+  line-height: 0.85; padding-right: 0.5rem; padding-top: 0.3rem;
+  font-weight: 800; color: var(--blue);
+}
+
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 0.8rem 1.4rem;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem;
+  font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;
+  border: 1.5px solid var(--ink); background: transparent;
+  color: var(--ink); cursor: pointer;
+  transition: all 0.2s; position: relative;
+}
+.btn::after { content: '→'; font-family: 'IBM Plex Sans', sans-serif; transition: transform 0.2s; }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn:hover::after { transform: translateX(3px); }
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { background: var(--blue); border-color: var(--blue); }
+
+.hero-right { position: relative; padding-top: 1rem; }
+.sketch-figure { position: relative; }
+.terminal-sketch { width: 100%; height: auto; filter: drop-shadow(2px 4px 0 rgba(26,24,21,0.06)); }
+
+.figure-caption {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray);
+  margin-top: 0.75rem; display: flex; gap: 0.5rem; align-items: baseline;
+}
+.figure-caption .fig-label { color: var(--red); font-weight: 600; }
+
+.annotation {
+  position: absolute;
+  font-family: 'Caveat', cursive; font-size: 1.3rem;
+  color: var(--blue); line-height: 1.1; font-weight: 500;
+}
+
+/* Section headings */
+.section-marker {
+  display: flex; align-items: baseline; gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.section-marker .num { font-weight: 700; color: var(--red); }
+.section-marker .bar { flex: 1; height: 1px; background: var(--rule); margin-left: 0.5rem; }
+.section-title {
+  font-size: clamp(2.25rem, 4.5vw, 3.8rem);
+  margin-bottom: 1rem; font-weight: 800; letter-spacing: -0.03em;
+}
+.section-desc {
+  font-family: 'Fraunces', serif; font-style: italic;
+  font-size: 1.1rem; color: var(--ink-soft);
+  max-width: 620px; margin-bottom: 3.5rem;
+}
+
+/* Editorial / About */
+.editorial {
+  border-top: 1.5px solid var(--ink);
+  border-bottom: 1.5px solid var(--ink);
+  padding: 4rem 0;
+}
+.editorial-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; }
+.editorial-meta h2 { font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; }
+.editorial-meta .dateline {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray);
+  margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rule);
+}
+.editorial-body { columns: 2; column-gap: 2.5rem; font-size: 1rem; line-height: 1.75; }
+.editorial-body p { margin-bottom: 1rem; break-inside: avoid; }
+.editorial-body p:first-of-type::first-letter {
+  font-family: 'Fraunces', serif; font-size: 4rem; float: left;
+  line-height: 0.85; padding-right: 0.5rem; padding-top: 0.4rem;
+  font-weight: 800; color: var(--blue);
+}
+.pull-quote {
+  border-left: 3px solid var(--red); padding-left: 1.5rem;
+  margin: 2rem 0; font-family: 'Fraunces', serif;
+  font-style: italic; font-size: 1.4rem; line-height: 1.4;
+  color: var(--ink); break-inside: avoid;
+}
+
+/* Field notes / Projects */
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+.project-card {
+  position: relative; background: var(--paper);
+  border: 1.5px solid var(--ink); padding: 2.5rem 2rem 2rem;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+}
+.project-card:nth-child(1) { transform: rotate(-0.4deg); }
+.project-card:nth-child(2) { transform: rotate(0.5deg); }
+.project-card:nth-child(3) { transform: rotate(0.2deg); }
+.project-card:nth-child(4) { transform: rotate(-0.5deg); }
+.project-card:hover {
+  transform: translateY(-4px) rotate(0deg);
+  box-shadow: 0 2px 6px rgba(26,24,21,0.1), 0 16px 40px rgba(26,24,21,0.09);
+}
+.project-card.featured { grid-column: span 2; }
+.project-card .tape {
+  position: absolute; top: -12px; left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 90px; height: 24px;
+  background: rgba(232,197,71,0.5);
+  border-left: 1px dashed rgba(26,24,21,0.15);
+  border-right: 1px dashed rgba(26,24,21,0.15);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.25s;
+}
+.project-card:hover .tape { transform: translateX(-50%) rotate(-2.5deg) translateY(-2px); }
+.project-label {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray);
+  margin-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center;
+}
+.project-label .year { color: var(--blue); font-weight: 600; }
+.project-card h3 { margin-bottom: 0.75rem; font-weight: 700; letter-spacing: -0.02em; }
+.project-card .desc { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 1rem; line-height: 1.65; }
+.project-card ul { list-style: none; margin-bottom: 1.25rem; }
+.project-card li {
+  font-size: 0.9rem; color: var(--ink-soft);
+  padding-left: 1.5rem; position: relative;
+  margin-bottom: 0.4rem; line-height: 1.5;
+}
+.project-card li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--red); font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;
+}
+.project-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  padding-top: 1rem; border-top: 1px dashed var(--rule);
+}
+.project-tag {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.05em; padding: 0.2rem 0.6rem;
+  background: var(--paper-dark); color: var(--ink-soft);
+}
+.project-tag::before { content: '⟨'; margin-right: 0.15em; color: var(--blue); }
+.project-tag::after { content: '⟩'; margin-left: 0.15em; color: var(--blue); }
+
+/* Ledger / Experience */
+.ledger { border-top: 1.5px solid var(--ink); }
+.ledger-entry {
+  display: grid; grid-template-columns: 180px 1fr; gap: 2rem;
+  padding: 2rem 0; border-bottom: 1px solid var(--rule);
+  position: relative; transition: background 0.2s;
+}
+.ledger-entry:hover { background: rgba(232,197,71,0.08); }
+.ledger-date {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  letter-spacing: 0.05em; color: var(--ink-soft);
+  font-weight: 500; text-transform: uppercase; padding-top: 0.2rem;
+}
+.ledger-content h3 { font-size: 1.35rem; margin-bottom: 0.3rem; font-weight: 700; letter-spacing: -0.01em; }
+.ledger-content .role {
+  font-family: 'Fraunces', serif; font-style: italic;
+  color: var(--blue); font-size: 1rem; margin-bottom: 0.5rem;
+}
+.ledger-content p { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.65; }
+.ledger-content .badge {
+  display: inline-block; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--red); border: 1px solid var(--red);
+  padding: 0.1rem 0.4rem; margin-top: 0.5rem;
+  transform: rotate(-1deg); font-weight: 600;
+}
+
+/* Toolbox */
+.toolbox { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.tool-group {
+  position: relative; padding: 1.5rem;
+  border: 1.5px solid var(--ink); background: var(--paper);
+  transition: transform 0.2s;
+}
+.tool-group:nth-child(1) { border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; }
+.tool-group:nth-child(2) { border-radius: 15px 255px 15px 225px / 225px 15px 255px 15px; }
+.tool-group:nth-child(3) { border-radius: 225px 15px 255px 15px / 15px 255px 15px 225px; }
+.tool-group:nth-child(4) { border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px; }
+.tool-group:hover { transform: rotate(-1deg); }
+.tool-group-label {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule);
+}
+.tool-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tool-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem;
+  padding: 0.3rem 0.65rem; background: var(--paper-dark);
+  color: var(--ink); border: 1px solid transparent;
+  transition: all 0.2s; cursor: default;
+}
+.tool-pill:hover { border-color: var(--red); color: var(--red); transform: rotate(-2deg); }
+
+/* Record / Education */
+.education-list { display: flex; flex-direction: column; margin-top: 3rem; }
+.edu-item {
+  display: grid; grid-template-columns: 60px 1fr auto; gap: 1.5rem;
+  align-items: baseline; padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.edu-item .edu-num {
+  font-family: 'Fraunces', serif; font-size: 2rem;
+  font-style: italic; color: var(--blue); line-height: 1;
+}
+.edu-item h4 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.2rem; letter-spacing: -0.01em; }
+.edu-item p { font-size: 0.9rem; color: var(--ink-soft); }
+.edu-item .edu-year {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  letter-spacing: 0.1em; color: var(--gray); text-transform: uppercase;
+}
+
+/* Testimonial */
+.testimonial-block {
+  border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink);
+  padding: 4rem 0; text-align: center; position: relative;
+}
+.testimonial-block blockquote {
+  font-family: 'Fraunces', serif; font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.3; max-width: 800px; margin: 0 auto 1.5rem;
+  letter-spacing: -0.02em; color: var(--ink);
+}
+.testimonial-block blockquote::before {
+  content: '"'; font-family: 'Fraunces', serif; font-size: 5rem;
+  color: var(--red); display: block; line-height: 0.5;
+  margin-bottom: 1rem; font-weight: 800;
+}
+.testimonial-block cite {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gray); font-style: normal;
+}
+
+/* Correspondence */
+.correspondence { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start; margin-top: 2rem; }
+.correspondence h2 {
+  font-size: clamp(2.75rem, 5.5vw, 4.5rem); font-weight: 800;
+  letter-spacing: -0.04em; margin-bottom: 1.5rem; line-height: 0.95;
+}
+.correspondence h2 .italic { font-style: italic; font-weight: 400; color: var(--blue); }
+.correspondence > div > p {
+  font-family: 'Fraunces', serif; font-style: italic;
+  font-size: 1.2rem; color: var(--ink-soft);
+  margin-bottom: 2rem; max-width: 480px; line-height: 1.5;
+}
+.contact-links { display: flex; flex-direction: column; border-top: 1.5px solid var(--ink); }
+.contact-link {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.5rem 0; border-bottom: 1px solid var(--rule);
+  text-decoration: none; color: var(--ink);
+  transition: padding 0.25s, color 0.2s;
+  font-family: 'Fraunces', serif; font-size: 1.5rem;
+  font-weight: 500; letter-spacing: -0.02em;
+}
+.contact-link:hover { padding-left: 0.75rem; color: var(--blue); }
+.contact-link .arrow {
+  font-family: 'IBM Plex Mono', monospace; font-size: 1rem;
+  color: var(--red); transition: transform 0.2s;
+}
+.contact-link:hover .arrow { transform: translateX(6px); }
+
+.contact-card {
+  border: 1.5px solid var(--ink); padding: 2rem;
+  position: relative; transform: rotate(1deg); background: var(--paper);
+  border-radius: 15px 255px 15px 225px / 225px 15px 255px 15px;
+}
+.contact-card::before {
+  content: 'POSTCARD';
+  position: absolute; top: -10px; left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  background: var(--paper); padding: 0 1rem;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.2em; color: var(--red); font-weight: 600;
+}
+.contact-card .stamp-box {
+  position: absolute; top: 1rem; right: 1rem;
+  border: 2px dashed var(--red); padding: 0.5rem;
+  width: 60px; height: 70px; display: grid; place-items: center;
+  font-family: 'Fraunces', serif; font-size: 2rem; color: var(--red);
+  transform: rotate(8deg); opacity: 0.8;
+}
+.contact-card h4 { font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem; }
+.contact-card p { font-family: 'Caveat', cursive; font-size: 1.3rem; line-height: 1.4; color: var(--ink-soft); }
+.contact-card .signature {
+  margin-top: 1.5rem; font-family: 'Fraunces', serif;
+  font-style: italic; font-size: 1.75rem; color: var(--ink);
+  padding-top: 1rem; border-top: 1px solid var(--rule);
+}
+
+/* Footer / Colophon */
+footer { border-top: 1.5px solid var(--ink); padding: 3rem 0 2rem; margin-top: 4rem; }
+.colophon-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.colophon-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 0.75rem; font-weight: 600;
+}
+.colophon-block p, .colophon-block li {
+  font-size: 0.85rem; color: var(--ink-soft); line-height: 1.7; list-style: none;
+}
+.colophon-block a:hover { color: var(--blue); text-decoration: underline; }
+.footer-bottom {
+  border-top: 1px solid var(--rule); padding-top: 1.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  letter-spacing: 0.1em; color: var(--gray);
+  text-transform: uppercase; flex-wrap: wrap; gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-grid, .correspondence { grid-template-columns: 1fr; gap: 2.5rem; }
+  .editorial-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .editorial-body { columns: 1; }
+  .projects-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .project-card.featured { grid-column: span 1; }
+  .toolbox { grid-template-columns: repeat(2, 1fr); }
+  .ledger-entry { grid-template-columns: 1fr; gap: 0.5rem; }
+  .edu-item { grid-template-columns: 40px 1fr; gap: 1rem; }
+  .edu-item .edu-year { grid-column: 2; }
+  .colophon-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .nav-links { display: none; }
+}
+
+@media (max-width: 560px) {
+  .toolbox { grid-template-columns: 1fr; }
+  section { padding: 4rem 0; }
+  .container { width: min(100% - 2rem, 1200px); }
+  .hero-title { font-size: clamp(2.5rem, 12vw, 4rem); }
+  .masthead-title { font-size: clamp(2rem, 11vw, 3rem); }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .btn { justify-content: center; }
+}
+
+::selection { background: var(--yellow); color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body id="top">
+
+<nav class="top-nav">
+  <div class="container">
+    <a href="#top" class="logo-mark">YN <small>— est. 2005</small></a>
+    <ul class="nav-links">
+      <li><a href="#editorial">About</a></li>
+      <li><a href="#field-notes">Work</a></li>
+      <li><a href="#ledger">Ledger</a></li>
+      <li><a href="#toolbox">Toolbox</a></li>
+      <li><a href="#correspondence">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <header class="masthead">
+    <div class="masthead-meta">
+      <span>VOL. I — ISSUE No. 01</span>
+      <span>KARACHI · PAKISTAN</span>
+      <span>EST. MMV</span>
     </div>
+    <h1 class="masthead-title">
+      Yousuf<br>
+      <span class="italic">Nasurullah</span>.
+    </h1>
+    <div class="masthead-bottom">
+      <span>Software Engineer · Systems Thinker · Occasional Tinkerer</span>
+      <span class="stamp">Available · MMXXVI</span>
+    </div>
+  </header>
 
-    <div class="library-overlay" id="library-overlay" hidden>
-      <div class="library-panel">
-        <div class="library-header">
-          <div>
-            <p class="library-eyebrow">ALL WORK</p>
-            <h2 class="library-title">Project Library</h2>
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="eyebrow">A first-hand account</div>
+        <h2 class="hero-title">
+          <span class="line-1">Engineering</span>
+          <span class="line-2">the small</span>
+          <span class="line-2">things well.</span>
+        </h2>
+        <p class="hero-subtitle">
+          — a software engineer from Karachi
+          <span class="hand">(the rain here is honest)</span>
+        </p>
+        <p class="hero-body">
+          I build polished digital products with care about clarity, performance, and the small details that make software feel human. Recent work sits at the intersection of AI, web, and automation — sometimes all three at once.
+        </p>
+        <div class="hero-actions">
+          <a href="#field-notes" class="btn btn-primary">See the work</a>
+          <a href="Yousaf_Nasurullah_CV.pdf" download class="btn">Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="sketch-figure">
+          <svg class="terminal-sketch" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="sketch" x="-5%" y="-5%" width="110%" height="110%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="5"/>
+                <feDisplacementMap in="SourceGraphic" scale="1.2"/>
+              </filter>
+            </defs>
+            <g filter="url(#sketch)" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="20" y="20" width="360" height="270" rx="4" fill="none" stroke="#1a1815" stroke-width="2"/>
+              <line x1="20" y1="55" x2="380" y2="55" stroke="#1a1815" stroke-width="2"/>
+              <circle cx="42" cy="38" r="5" fill="#b8351d" stroke="#1a1815" stroke-width="1"/>
+              <circle cx="62" cy="38" r="5" fill="#e8c547" stroke="#1a1815" stroke-width="1"/>
+              <circle cx="82" cy="38" r="5" fill="#2f5d3a" stroke="#1a1815" stroke-width="1"/>
+            </g>
+            <g font-family="'IBM Plex Mono', monospace" font-size="12">
+              <text x="42" y="90" fill="#1a1815">$ whoami</text>
+              <text x="42" y="115" fill="#1f4a8f">yousuf — engineer, builder</text>
+              <text x="42" y="150" fill="#1a1815">$ cat /passion.txt</text>
+              <text x="42" y="175" fill="#1a1815">→ ship things that matter</text>
+              <text x="42" y="195" fill="#1a1815">→ think in systems</text>
+              <text x="42" y="215" fill="#1a1815">→ sweat the small stuff</text>
+              <text x="42" y="250" fill="#1a1815">$ <tspan fill="#b8351d">█</tspan></text>
+            </g>
+          </svg>
+
+          <svg style="position:absolute; top: 32%; right: -20px; width: 110px; height: 70px;" viewBox="0 0 110 70">
+            <path d="M 10 55 Q 45 50 72 28 Q 88 15 100 8" stroke="#b8351d" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M 90 14 L 102 6 L 98 20" stroke="#b8351d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="annotation" style="top: 42%; right: -70px; transform: rotate(-8deg); width: 130px;">
+            where the magic happens
           </div>
-          <button class="library-close" id="library-close" type="button" aria-label="Close project library">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          </button>
-        </div>
-        <div class="library-grid" id="library-grid"></div>
-      </div>
-    </div>
 
-    <div class="image-preview-overlay" id="image-preview-overlay" hidden>
-      <div class="image-preview-panel">
-        <button class="image-preview-close" id="image-preview-close" type="button" aria-label="Close image preview">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </button>
-        <div class="image-preview-viewport">
-          <img id="image-preview-image" class="image-preview-image" src="" alt="Project preview" />
+          <div class="figure-caption">
+            <span class="fig-label">FIG. 1</span>
+            <span>the daily interface — pencil rendering</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <section class="editorial" id="editorial">
+    <div class="editorial-grid">
+      <div class="editorial-meta">
+        <div class="dateline">An editorial — filed under: about me</div>
+        <h2>Who's writing this?</h2>
+        <p class="mono" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray); margin-top: 1rem;">
+          Author · Yousuf Nasurullah<br>
+          Affiliation · NED University
+        </p>
+      </div>
+      <div>
+        <div class="editorial-body">
+          <p>
+            I'm a software engineering student at NED University of Engineering & Technology, currently in my third year, and I've spent the last few years building things — some of them useful, all of them interesting. My work tends to sit at the edges: edge computing, edge cases, edge of what an intern is supposed to be trusted with.
+          </p>
+          <p>
+            I care about the texture of software. Not just whether it works, but whether it feels right. Whether the loading state is considered. Whether the copy is honest. Whether a stranger can find what they need in the first thirty seconds.
+          </p>
+        </div>
+        <blockquote class="pull-quote">
+          "Good software is honest software. It doesn't promise what it can't deliver, and it delivers what it promises — quietly, every time."
+        </blockquote>
+        <div class="editorial-body">
+          <p>
+            I've shipped things across AI, web, and automation — the kind of work that requires you to read three docs, argue with two APIs, and then explain it all to someone who just wants the button to work. That last part is the interesting part. That's where the engineering becomes human.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="field-notes">
+    <div class="section-marker">
+      <span class="num">01</span>
+      <span>Field Notes</span>
+      <span class="bar"></span>
+      <span>2024 — 2026</span>
+    </div>
+    <h2 class="section-title">A short catalogue of <span style="font-style: italic; font-weight: 400; color: var(--blue);">things I've built</span>.</h2>
+    <p class="section-desc">
+      Selected projects from the last two years. Each one taught me something I couldn't have learned from a tutorial.
+    </p>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="tape"></div>
+        <div class="project-label">
+          <span>No. 01 — Product</span>
+          <span class="year">2026</span>
+        </div>
+        <h3>AI Product Analytics Copilot</h3>
+        <p class="desc">
+          Full-stack SaaS intelligence dashboard with AI-assisted decisions. A recruiter-grade platform that unifies product, billing, and engineering signals into one view.
+        </p>
+        <ul>
+          <li>Integrated Stripe, GitHub, and OpenAI with multi-tenant auth and role-based access.</li>
+          <li>Added observability, background jobs, caching, and robust automated test coverage.</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">OpenAI</span>
+          <span class="project-tag">Stripe</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="tape"></div>
+        <div class="project-label">
+          <span>No. 02 — Tool</span>
+          <span class="year">2026</span>
+        </div>
+        <h3>StoreIQ Dashboard</h3>
+        <p class="desc">
+          Full-stack business intelligence dashboard for real KPI visibility. Turns raw commerce data into decision-ready views, customer insights, and clean exports.
+        </p>
+        <ul>
+          <li>React + Vite frontend with filtering and CSV export.</li>
+          <li>Express + SQLite backend with deterministic seeded data.</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Vite</span>
+          <span class="project-tag">Express</span>
+          <span class="project-tag">SQLite</span>
+        </div>
+      </article>
+
+      <article class="project-card featured">
+        <div class="tape"></div>
+        <div class="project-label">
+          <span>No. 03 — Featured · Consumer AI</span>
+          <span class="year">2025</span>
+        </div>
+        <h3>HAIRCAST — Your Personal AI Stylist</h3>
+        <p class="desc" style="font-size: 1rem;">
+          Bad hair days are a choice. HAIRCAST analyzes local weather patterns and your unique hair texture to predict your hair day and optimize your routine. Built for the 1000 users who are tired of guessing.
+        </p>
+        <ul>
+          <li>Hyper-local weather tracking — humidity, dew point, wind speed, everything that matters.</li>
+          <li>AI product audit and smart alerts for when you need dry shampoo, hats, or sealant.</li>
+          <li>Edge-delivery architecture aimed at sub-100ms responses for a snappy experience.</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">LLM</span>
+          <span class="project-tag">Edge</span>
+          <span class="project-tag">Weather API</span>
+          <span class="project-tag">Consumer</span>
+          <a href="https://github.com/YousufJumani/HairCastAI" target="_blank" rel="noopener" class="project-tag" style="text-decoration: none;">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="tape"></div>
+        <div class="project-label">
+          <span>No. 04 — Mobile</span>
+          <span class="year">2026</span>
+        </div>
+        <h3>ClassCompass — Attendance Risk & CGPA Planning App</h3>
+        <p class="desc">
+          Computes per-subject attendance risk (safe-to-skip count, must-attend count, streaks) and a CGPA target calculator, in active use by 100+ NED student beta testers.
+        </p>
+        <ul>
+          <li>Computes per-subject attendance risk (safe-to-skip count, must-attend count, streaks) in real time.</li>
+          <li>Built-in CGPA target calculator helping students plan course requirements and track academic performance.</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">React Native</span>
+          <span class="project-tag">Expo SDK 54</span>
+          <span class="project-tag">AsyncStorage</span>
+          <a href="https://github.com/YousufJumani/ClassCompass" target="_blank" rel="noopener" class="project-tag" style="text-decoration: none;">GitHub ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <div style="margin-top: 3.5rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+      <a href="https://www.linkedin.com/in/yousuf-nasurullah-a67960305/details/projects/" target="_blank" rel="noopener" class="btn btn-primary">
+        See more projects on LinkedIn
+      </a>
+      <span class="mono" style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray);">
+        Full case studies & archive on LinkedIn
+      </span>
+    </div>
+  </section>
+
+  <section id="ledger">
+    <div class="section-marker">
+      <span class="num">02</span>
+      <span>The Ledger</span>
+      <span class="bar"></span>
+      <span>2025 — 2026</span>
+    </div>
+    <h2 class="section-title">Every job taught me <span style="font-style: italic; font-weight: 400; color: var(--blue);">something</span>.</h2>
+    <p class="section-desc">Not all of these were glamorous. All of them were useful.</p>
+
+    <div class="ledger">
+      <div class="ledger-entry">
+        <div class="ledger-date">Jul — Aug 2026</div>
+        <div class="ledger-content">
+          <h3>App Development Intern</h3>
+          <div class="role">Zenvyro Labs (Pvt) Ltd. · Remote</div>
+          <p>Built UI screens for an in-development mobile app and wired them to backend REST endpoints under senior code review; shipped through a Git feature-branch / PR workflow.</p>
+        </div>
+      </div>
+
+      <div class="ledger-entry">
+        <div class="ledger-date">Jul 2026</div>
+        <div class="ledger-content">
+          <h3>Full-Stack Web Development Intern</h3>
+          <div class="role">NeuroFive Solutions</div>
+          <p>Completed a MERN-stack cohort covering REST API design, JWT authentication, and protected routes; delivered a full-stack CRUD capstone with role-based access.</p>
+        </div>
+      </div>
+
+      <div class="ledger-entry">
+        <div class="ledger-date">Feb — Apr 2026</div>
+        <div class="ledger-content">
+          <h3>IT Intern (Part-Time)</h3>
+          <div class="role">Karachi Development Authority</div>
+          <p>Wrote SQL queries against internal operational databases and built small automation scripts for data-cleanup and ticket triage in a government IT environment.</p>
+        </div>
+      </div>
+
+      <div class="ledger-entry">
+        <div class="ledger-date">2025</div>
+        <div class="ledger-content">
+          <h3>Technical Lead — GDSC NEDUET</h3>
+          <div class="role">Google Developer Student Clubs</div>
+          <p>Facilitated peer workshops on n8n automation and Python-based workflow optimization, helping students ship more structured and reliable engineering workflows.</p>
+        </div>
+      </div>
+
+      <div class="ledger-entry">
+        <div class="ledger-date">2025</div>
+        <div class="ledger-content">
+          <h3>Finalist — IBA Mental Health Hackathon</h3>
+          <div class="role">Pitched to industry leaders from SadaPay & Motive</div>
+          <p>Pitched a sentiment-aware AI triage system focusing on signal clarity, human-centered UX, and decision support.</p>
+          <span class="badge">Finalist</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolbox">
+    <div class="section-marker">
+      <span class="num">03</span>
+      <span>The Toolbox</span>
+      <span class="bar"></span>
+      <span>In use</span>
+    </div>
+    <h2 class="section-title">What I actually <span style="font-style: italic; font-weight: 400; color: var(--blue);">use</span>.</h2>
+    <p class="section-desc">Not a list of everything I've touched. A list of what I'd reach for again.</p>
+
+    <div class="toolbox">
+      <div class="tool-group">
+        <div class="tool-group-label">Core — CS</div>
+        <div class="tool-pills">
+          <span class="tool-pill">DSA</span>
+          <span class="tool-pill">OOP</span>
+          <span class="tool-pill">DBMS</span>
+          <span class="tool-pill">Networks</span>
+          <span class="tool-pill">OS</span>
+          <span class="tool-pill">System Design</span>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <div class="tool-group-label">Languages</div>
+        <div class="tool-pills">
+          <span class="tool-pill">Python</span>
+          <span class="tool-pill">JavaScript (ES6+)</span>
+          <span class="tool-pill">C / C++</span>
+          <span class="tool-pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <div class="tool-group-label">Frameworks</div>
+        <div class="tool-pills">
+          <span class="tool-pill">React.js</span>
+          <span class="tool-pill">Next.js</span>
+          <span class="tool-pill">Node.js</span>
+          <span class="tool-pill">Tailwind</span>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <div class="tool-group-label">Tools & Cloud</div>
+        <div class="tool-pills">
+          <span class="tool-pill">Git</span>
+          <span class="tool-pill">Docker</span>
+          <span class="tool-pill">REST APIs</span>
+          <span class="tool-pill">AWS</span>
+          <span class="tool-pill">Selenium</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="record">
+    <div class="section-marker">
+      <span class="num">04</span>
+      <span>The Record</span>
+      <span class="bar"></span>
+      <span>On paper</span>
+    </div>
+    <h2 class="section-title">The <span style="font-style: italic; font-weight: 400; color: var(--blue);">paperwork</span>.</h2>
+
+    <div class="education-list">
+      <div class="edu-item">
+        <div class="edu-num">i.</div>
+        <div>
+          <h4>Bachelor in Computer Sciences & Information Technology</h4>
+          <p>NED University of Engineering and Technology · Karachi</p>
+        </div>
+        <div class="edu-year">Expected 2027</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-num">ii.</div>
+        <div>
+          <h4>Full Stack Developer</h4>
+          <p>FreeCodeCamp</p>
+        </div>
+        <div class="edu-year">Certified</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-num">iii.</div>
+        <div>
+          <h4>Cloud & DevOps</h4>
+          <p>Coursera</p>
+        </div>
+        <div class="edu-year">Certified</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="testimonial-block">
+    <blockquote>Finally, an app that tells me if I should bother straightening my hair.</blockquote>
+    <cite>— Trusted by 1000 users on HAIRCAST</cite>
+  </div>
+
+  <section id="correspondence">
+    <div class="section-marker">
+      <span class="num">05</span>
+      <span>Correspondence</span>
+      <span class="bar"></span>
+      <span>Say hello</span>
+    </div>
+
+    <div class="correspondence">
+      <div>
+        <h2>
+          Let's <span class="italic">build</span><br>
+          something<br>
+          together.
+        </h2>
+        <p>
+          Whether you have a role to fill, a product to ship, or just want to argue about system design over chai — the inbox is open.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/yousuf-nasurullah-a67960305/" target="_blank" rel="noopener" class="contact-link">
+            <span>LinkedIn</span><span class="arrow">→</span>
+          </a>
+          <a href="mailto:yousufjumani2@gmail.com" class="contact-link">
+            <span>Email</span><span class="arrow">→</span>
+          </a>
+          <a href="https://github.com/YousufJumani" target="_blank" rel="noopener" class="contact-link">
+            <span>GitHub</span><span class="arrow">→</span>
+          </a>
+          <a href="Yousaf_Nasurullah_CV.pdf" download="Yousaf_Nasurullah_CV.pdf" class="contact-link">
+            <span>Download CV</span><span class="arrow">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="stamp-box">✉</div>
+        <h4>Best way to reach me:</h4>
+        <p>
+          Email: <a href="mailto:yousufjumani2@gmail.com" style="color: var(--blue); text-decoration: underline;">yousufjumani2@gmail.com</a><br>
+          I reply within a day or two.<br>
+          <br>
+          If it's urgent, ping<br>
+          me on LinkedIn.
+        </p>
+        <div class="signature">— Yousuf</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="colophon-grid">
+      <div class="colophon-block">
+        <h5>Colophon</h5>
+        <p>
+          Set in Fraunces, IBM Plex Mono & Sans, and Caveat.
+          Built with hand-written HTML & CSS. No frameworks, no build step, no nonsense.
+          Designed and coded in Karachi, Pakistan.
+        </p>
+      </div>
+      <div class="colophon-block">
+        <h5>Index</h5>
+        <ul>
+          <li><a href="#editorial">About</a></li>
+          <li><a href="#field-notes">Field Notes</a></li>
+          <li><a href="#ledger">The Ledger</a></li>
+          <li><a href="#toolbox">Toolbox</a></li>
+          <li><a href="#correspondence">Contact</a></li>
+        </ul>
+      </div>
+      <div class="colophon-block">
+        <h5>Elsewhere</h5>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/yousuf-nasurullah-a67960305/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/YousufJumani" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:yousufjumani2@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© MMXXVI · Yousuf Nasurullah</span>
+      <span>Handmade · Not generated</span>
+      <span>Vol. I · Issue 01</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+// Slight organic rotation on project cards as they enter view
+const cards = document.querySelectorAll('.project-card');
+const observe = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transition = 'opacity 0.6s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)';
+    }
+  });
+}, { threshold: 0.1 });
+cards.forEach(c => { c.style.opacity = '0'; observe.observe(c); });
+
+// Blinking terminal cursor
+const cursor = document.querySelector('.terminal-sketch tspan');
+if (cursor) {
+  setInterval(() => {
+    cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+  }, 600);
+}
+</script>
+
+</body>
 </html>

@@ -1,26 +1,13 @@
-# Yousaf Portfolio
+# Yousuf Nasurullah · Portfolio
 
-Personal portfolio website for Yousaf Nasurullah.
+Personal portfolio website of Yousuf Nasurullah — Software Engineer.
 
-## Stack
-- HTML
-- CSS
-- Vanilla JavaScript
+## Tech Stack
+- Handwritten HTML5 & CSS3
+- Typography: Fraunces, IBM Plex Mono & Sans, Caveat
+- Editorial & newspaper aesthetic
 
-## Run Locally
-From this folder, run:
-
-```bash
-python -m http.server 5500
-```
-
-Open http://localhost:5500
-
-## Deploy
-This repo is configured for Vercel static hosting.
-
-### GitHub
-Repository: https://github.com/YousufJumani/yousaf
-
-### Vercel
-Import the GitHub repo in Vercel and deploy.
+## Contact
+- **LinkedIn**: [Yousuf Nasurullah](https://www.linkedin.com/in/yousuf-nasurullah-a67960305/)
+- **GitHub**: [YousufJumani](https://github.com/YousufJumani)
+- **Email**: yousufjumani2@gmail.com
